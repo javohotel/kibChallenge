@@ -4,18 +4,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import { Table, Button } from 'react-bootstrap';
-import { Pencil, Trash } from 'react-bootstrap-icons';
-
-import mock from './mocks/accounts.mock.json';
+import { Pencil, Trash } from 'react-bootstrap-icons'; 
 
 function App() {
-
-  const { data } = mock;
 
   const [datos, setDatos] = useState([]);
 
   useEffect(() => {
-    setDatos(data);
+    fetch('/mocks/accounts.mock.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Red no disponible');
+        }
+        return response.json();
+      })
+      .then(data => setDatos(data.data))
+      .catch(error => console.error('Error al recibir los datos:', error));
   }, []);
 
   const onEdit = (item) => {
@@ -64,11 +68,11 @@ function App() {
 
   return (
     <>
-     <h1>Accounts</h1>  
+     <h1>Mis Cuentas</h1>  
      <Table striped bordered hover>
       <thead>
         <tr>
-          <th>Numero de cuenta</th>
+          <th>Número de cuenta</th>
           <th>Saldo</th>
           <th>Alias</th>
           <th>Editar</th>
