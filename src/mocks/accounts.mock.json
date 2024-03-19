@@ -1,0 +1,54 @@
+{
+    "success": true,
+    "message": "Success response from service",
+    "data": [
+        {
+            "id": "1",
+            "accountNumber": "765777575757576767",
+            "saldo": 5000,
+            "alias": "Cuenta corriente 1"
+        },
+        {
+            "id": "2",
+            "accountNumber": "01700062300000004838",
+            "saldo": 55000,
+            "alias": "Cuenta corriente 2"
+        },
+        {
+            "id": "3",
+            "accountNumber": "4565141321512313211",
+            "saldo": 45000,
+            "alias": "Cuenta corriente 3"
+        },
+        {
+            "id": "4",
+            "accountNumber": "90982782829488848554",
+            "saldo": 15000,
+            "alias": "Cuenta corriente 4"
+        },
+        {
+            "id": "5",
+            "accountNumber": "32492842989358903589",
+            "saldo": 2000,
+            "alias": "Cuenta corriente 5"
+        },
+        {
+            "id": "6",
+            "accountNumber": "01700062300000004838",
+            "saldo": 56000,
+            "alias": "Cuenta corriente 6"
+        },
+        {
+            "id": "7",
+            "accountNumber": "151545451212112151",
+            "saldo": 10000,
+            "alias": "Cuenta corriente 7"
+        },
+        {
+            "id": "8",
+            "accountNumber": "453453454355553545354",
+            "saldo": 565000,
+            "alias": "Cuenta corriente 8"
+        }
+    ]
+}
